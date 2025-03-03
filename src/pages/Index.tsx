@@ -19,7 +19,7 @@ const Index = () => {
       // Show/hide scroll to top button
       setShowScrollTop(window.scrollY > 500);
       
-      // Highlight active section in navbar (optional implementation)
+      // Highlight active section in navbar
       const sections = ['services', 'features', 'about', 'testimonials', 'contact'];
       
       // Find the current active section

@@ -1,5 +1,6 @@
 
 import { Mail, Phone, MapPin, ChevronRight, Linkedin, Twitter, Facebook } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -45,34 +46,34 @@ const Footer = () => {
             <h3 className="font-semibold text-lg mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#about" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
+                <Link to="/about" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
                   <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#leadership" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
+                <Link to="/leadership" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
                   <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
                   Leadership
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#careers" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
+                <Link to="/careers" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
                   <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
                   Careers
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#news" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
+                <Link to="/news" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
                   <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
                   News
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contact" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
+                <Link to="/#contact" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
                   <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -82,71 +83,71 @@ const Footer = () => {
             <h3 className="font-semibold text-lg mb-4">Solutions</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#services" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
+                <Link to="/claims-management" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
                   <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
-                  Medical Billing
-                </a>
+                  Claims Management
+                </Link>
               </li>
               <li>
-                <a href="#services" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
+                <Link to="/financial-analytics" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
                   <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
-                  Coding & Documentation
-                </a>
+                  Financial Analytics
+                </Link>
               </li>
               <li>
-                <a href="#services" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
+                <Link to="/patient-engagement" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
                   <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
-                  Revenue Cycle Analytics
-                </a>
+                  Patient Engagement
+                </Link>
               </li>
               <li>
-                <a href="#services" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
+                <Link to="/operational-excellence" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
                   <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
-                  Practice Management
-                </a>
+                  Operational Excellence
+                </Link>
               </li>
               <li>
-                <a href="#services" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
+                <Link to="/compliance-solutions" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
                   <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
                   Compliance Solutions
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
           
           {/* Technology */}
           <div className="lg:col-span-2 md:col-span-1">
-            <h3 className="font-semibold text-lg mb-4">Technology</h3>
+            <h3 className="font-semibold text-lg mb-4">Resources</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#features" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
+                <Link to="/blog" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
                   <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
-                  ClaimIQ™ Engine
-                </a>
+                  Blog
+                </Link>
               </li>
               <li>
-                <a href="#features" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
+                <Link to="/case-studies" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
                   <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
-                  RevInsight™ Analytics
-                </a>
+                  Case Studies
+                </Link>
               </li>
               <li>
-                <a href="#features" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
+                <Link to="/white-papers" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
                   <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
-                  Security Infrastructure
-                </a>
+                  White Papers
+                </Link>
               </li>
               <li>
-                <a href="#features" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
+                <Link to="/webinars" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
                   <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
-                  EHR Integrations
-                </a>
+                  Webinars
+                </Link>
               </li>
               <li>
-                <a href="#features" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
+                <Link to="/support-center" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
                   <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
-                  Implementation Process
-                </a>
+                  Support Center
+                </Link>
               </li>
             </ul>
           </div>
@@ -172,21 +173,27 @@ const Footer = () => {
               <h4 className="font-medium text-sm mb-3 text-rcm-gray-300">Follow Us</h4>
               <div className="flex space-x-4">
                 <a 
-                  href="#" 
+                  href="https://linkedin.com" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 bg-rcm-gray-800 hover:bg-gradient-to-r from-[#006B5E] to-[#0096D6] rounded-full flex items-center justify-center transition-colors duration-300"
                   aria-label="LinkedIn"
                 >
                   <Linkedin className="h-5 w-5" />
                 </a>
                 <a 
-                  href="#" 
+                  href="https://twitter.com" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 bg-rcm-gray-800 hover:bg-gradient-to-r from-[#006B5E] to-[#0096D6] rounded-full flex items-center justify-center transition-colors duration-300"
                   aria-label="Twitter"
                 >
                   <Twitter className="h-5 w-5" />
                 </a>
                 <a 
-                  href="#" 
+                  href="https://facebook.com" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 bg-rcm-gray-800 hover:bg-gradient-to-r from-[#006B5E] to-[#0096D6] rounded-full flex items-center justify-center transition-colors duration-300"
                   aria-label="Facebook"
                 >
@@ -202,15 +209,15 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} MedRCM360. All rights reserved.
           </div>
           <div className="flex space-x-6">
-            <a href="/privacy" className="text-rcm-gray-500 hover:text-rcm-gray-300 text-sm transition-colors duration-300">
+            <Link to="/privacy" className="text-rcm-gray-500 hover:text-rcm-gray-300 text-sm transition-colors duration-300">
               Privacy Policy
-            </a>
-            <a href="/terms" className="text-rcm-gray-500 hover:text-rcm-gray-300 text-sm transition-colors duration-300">
+            </Link>
+            <Link to="/terms" className="text-rcm-gray-500 hover:text-rcm-gray-300 text-sm transition-colors duration-300">
               Terms of Service
-            </a>
-            <a href="/cookies" className="text-rcm-gray-500 hover:text-rcm-gray-300 text-sm transition-colors duration-300">
+            </Link>
+            <Link to="/cookies" className="text-rcm-gray-500 hover:text-rcm-gray-300 text-sm transition-colors duration-300">
               Cookie Policy
-            </a>
+            </Link>
           </div>
         </div>
       </div>

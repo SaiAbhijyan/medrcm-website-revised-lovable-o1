@@ -34,11 +34,11 @@ const Hero = () => {
               </span>
             </div>
             <h1 className="mb-6">
-              <span className="block">360° Solutions for Your</span> 
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#006B5E] to-[#0096D6]">Medical Revenue Cycle</span>
+              <span className="block">Transforming Healthcare</span> 
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#006B5E] to-[#0096D6]"> Revenue Cycle Management </span>
             </h1>
             <p className="text-rcm-gray-600 text-lg md:text-xl mb-8 max-w-xl">
-              MedRCM360 delivers comprehensive revenue cycle management services to maximize reimbursements, reduce denials, and improve your practice's financial health.
+              Streamline your healthcare revenue cycle with our cutting-edge technology and expert services. Maximize reimbursements, reduce denials, and improve patient financial experiences.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-10">

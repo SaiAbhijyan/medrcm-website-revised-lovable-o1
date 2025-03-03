@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
-import { CheckCircle, FileText, DollarSign, Users, Activity, Shield } from "lucide-react";
+import { CheckCircle, FileText, DollarSign, Users, Activity, Shield, ClipboardList, Briefcase } from "lucide-react";
 
 interface ServiceCardProps {
   icon: React.ReactNode;
@@ -17,15 +17,15 @@ const ServiceCard = ({ icon, title, description, features, isActive, onClick }: 
     <div 
       className={`rounded-xl p-6 transition-all duration-300 cursor-pointer border ${
         isActive 
-          ? 'bg-white shadow-medium scale-105 border-rcm-blue-200' 
+          ? 'bg-white shadow-medium scale-105 border-[#0096D6]/30' 
           : 'bg-white/60 hover:bg-white hover:shadow-soft border-transparent'
       }`}
       onClick={onClick}
     >
       <div className={`w-12 h-12 mb-4 flex items-center justify-center rounded-full ${
-        isActive ? 'bg-gradient-to-r from-rcm-blue-500 to-rcm-teal-500' : 'bg-rcm-blue-100'
+        isActive ? 'bg-gradient-to-r from-[#006B5E] to-[#0096D6]' : 'bg-[#E6F7FF]'
       }`}>
-        <div className={isActive ? 'text-white' : 'text-rcm-blue-600'}>
+        <div className={isActive ? 'text-white' : 'text-[#0096D6]'}>
           {icon}
         </div>
       </div>
@@ -34,7 +34,7 @@ const ServiceCard = ({ icon, title, description, features, isActive, onClick }: 
       <ul className="space-y-2 mb-5">
         {features.map((feature, idx) => (
           <li key={idx} className="flex items-start">
-            <CheckCircle className="h-5 w-5 text-rcm-teal-500 mr-2 shrink-0 mt-0.5" />
+            <CheckCircle className="h-5 w-5 text-[#006B5E] mr-2 shrink-0 mt-0.5" />
             <span className="text-rcm-gray-700 text-sm">{feature}</span>
           </li>
         ))}
@@ -44,8 +44,8 @@ const ServiceCard = ({ icon, title, description, features, isActive, onClick }: 
         variant={isActive ? "default" : "outline"} 
         className={`w-full justify-center mt-2 ${
           isActive 
-            ? 'bg-gradient-to-r from-rcm-blue-500 to-rcm-teal-500 hover:from-rcm-blue-600 hover:to-rcm-teal-600 text-white' 
-            : 'border-rcm-blue-200 text-rcm-blue-600'
+            ? 'bg-gradient-to-r from-[#006B5E] to-[#0096D6] hover:from-[#005A4E] hover:to-[#0078AB] text-white' 
+            : 'border-[#0096D6]/30 text-[#0096D6]'
         }`}
       >
         Learn More
@@ -60,73 +60,84 @@ const Services = () => {
   const services = [
     {
       icon: <FileText className="h-6 w-6" />,
-      title: "Claims Management",
-      description: "Streamline your claims processing with AI-powered accuracy and efficiency.",
+      title: "Medical Billing",
+      description: "Comprehensive medical billing services to maximize collections and minimize rejections.",
       features: [
-        "Automated claim scrubbing",
-        "Real-time eligibility verification",
-        "Denial management workflow",
-        "98% clean claim rate"
+        "Charge entry and claim submission",
+        "Payment posting and reconciliation",
+        "Denial management and appeals",
+        "Patient statement processing"
+      ]
+    },
+    {
+      icon: <ClipboardList className="h-6 w-6" />,
+      title: "Coding & Documentation",
+      description: "Expert coding services to ensure accuracy and compliance with latest regulations.",
+      features: [
+        "ICD-10 and CPT coding",
+        "Documentation improvement",
+        "Coding audits and education",
+        "Compliance monitoring"
       ]
     },
     {
       icon: <DollarSign className="h-6 w-6" />,
-      title: "Financial Analytics",
-      description: "Gain actionable insights from comprehensive revenue cycle data analytics.",
+      title: "Revenue Cycle Analytics",
+      description: "Data-driven insights to identify opportunities and optimize financial performance.",
       features: [
-        "Custom KPI dashboards",
-        "Predictive revenue modeling",
-        "Reimbursement optimization",
-        "Variance analysis"
+        "Key performance dashboards",
+        "Financial reporting and analysis",
+        "Forecasting and trend identification",
+        "Payer contract optimization"
       ]
     },
     {
       icon: <Users className="h-6 w-6" />,
-      title: "Patient Engagement",
-      description: "Enhance patient experience with integrated financial and clinical communication.",
+      title: "Practice Management",
+      description: "Streamline front office operations to enhance patient experience and capture revenue.",
       features: [
-        "Digital patient statements",
-        "Payment plan automation",
-        "Satisfaction analytics",
-        "Multi-channel communication"
+        "Appointment scheduling",
+        "Insurance eligibility verification",
+        "Prior authorization management",
+        "Patient payment collections"
       ]
     },
     {
-      icon: <Activity className="h-6 w-6" />,
-      title: "Operational Excellence",
-      description: "Optimize workflows and staff productivity with intelligent automation.",
+      icon: <Briefcase className="h-6 w-6" />,
+      title: "Credentialing Services",
+      description: "Simplify provider enrollment and maintain proper credentials with all payers.",
       features: [
-        "Workflow automation",
-        "Staff performance metrics",
-        "Process optimization",
-        "Compliance monitoring"
+        "Provider enrollment with payers",
+        "CAQH profile management",
+        "Re-credentialing services",
+        "Privileging assistance"
       ]
     },
     {
       icon: <Shield className="h-6 w-6" />,
       title: "Compliance Solutions",
-      description: "Stay compliant with ever-changing healthcare regulations and requirements.",
+      description: "Stay compliant with healthcare regulations and avoid costly penalties.",
       features: [
-        "HIPAA compliance tools",
-        "Audit trail documentation",
-        "Regulatory updates",
-        "Risk assessment"
+        "HIPAA compliance programs",
+        "OIG compliance guidance",
+        "Risk assessments and audits",
+        "Staff education and training"
       ]
     }
   ];
 
   return (
-    <section id="services" className="py-20 bg-gradient-to-b from-white to-rcm-blue-50/40">
+    <section id="services" className="py-20 bg-gradient-to-b from-white to-[#F0F9FF]/40">
       <div className="section-container">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-block mb-4">
-            <span className="bg-rcm-teal-50 text-rcm-teal-600 text-sm font-medium px-3 py-1 rounded-full">
-              Our Solutions
+            <span className="bg-[#E6F4F1] text-[#006B5E] text-sm font-medium px-3 py-1 rounded-full">
+              Our Services
             </span>
           </div>
           <h2 className="mb-6">Comprehensive Revenue Cycle Solutions</h2>
           <p className="text-rcm-gray-600 text-lg">
-            Our integrated platform and services help healthcare providers optimize every aspect of the revenue cycle, from patient registration to final payment.
+            MedRCM360 provides end-to-end revenue cycle management services tailored to your specialty, helping you increase collections, reduce overhead, and focus on patient care.
           </p>
         </div>
         
@@ -145,8 +156,8 @@ const Services = () => {
         </div>
         
         <div className="mt-16 text-center">
-          <Button className="bg-white border border-rcm-blue-200 text-rcm-blue-600 hover:bg-rcm-blue-50 px-8 py-6 rounded-md shadow-sm">
-            View All Solutions
+          <Button className="bg-white border border-[#0096D6]/30 text-[#0096D6] hover:bg-[#E6F7FF] px-8 py-6 rounded-md shadow-sm">
+            View All Services
           </Button>
         </div>
       </div>

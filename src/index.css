@@ -16,16 +16,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 205 100% 45%;
+    --primary: 196 100% 42%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 180 88% 31%;
+    --secondary: 174 100% 28%;
     --secondary-foreground: 210 40% 98%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 180 70% 45%;
+    --accent: 196 100% 42%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -33,7 +33,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 205 100% 45%;
+    --ring: 196 100% 42%;
 
     --radius: 0.5rem;
 
@@ -132,11 +132,11 @@
   }
   
   .gradient-border {
-    border-image: linear-gradient(to right, theme('colors.rcm.blue.400'), theme('colors.rcm.teal.400')) 1;
+    border-image: linear-gradient(to right, #0096D6, #006B5E) 1;
   }
   
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-rcm-blue-500 to-rcm-teal-500;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#0096D6] to-[#006B5E];
   }
 }
 

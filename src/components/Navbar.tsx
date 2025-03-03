@@ -28,22 +28,20 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex">
             <a href="#" className="flex items-center">
-              <span className="text-2xl font-display font-bold text-rcm-blue-600">
-                Revenue<span className="text-rcm-teal-500">Flow</span>
-              </span>
+              <img src="/lovable-uploads/41b33f0f-6809-4b35-8ebb-1615cd54421e.png" alt="MedRCM360 Logo" className="h-12 md:h-16" />
             </a>
           </div>
 
           {/* Desktop navigation */}
           <nav className="hidden md:flex items-center space-x-10">
             <a href="#services" className="text-rcm-gray-600 hover:text-rcm-blue-500 font-medium transition-colors">
-              Solutions
+              Services
             </a>
             <a href="#about" className="text-rcm-gray-600 hover:text-rcm-blue-500 font-medium transition-colors">
-              About
+              About Us
             </a>
             <a href="#testimonials" className="text-rcm-gray-600 hover:text-rcm-blue-500 font-medium transition-colors">
-              Results
+              Success Stories
             </a>
             <a href="#contact" className="text-rcm-gray-600 hover:text-rcm-blue-500 font-medium transition-colors">
               Contact
@@ -52,8 +50,8 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex">
-            <Button className="bg-gradient-to-r from-rcm-blue-500 to-rcm-teal-500 hover:from-rcm-blue-600 hover:to-rcm-teal-600 text-white px-6 py-2 rounded-md transition-all transform hover:scale-105">
-              Request Demo
+            <Button className="bg-gradient-to-r from-[#006B5E] to-[#0096D6] hover:from-[#005A4E] hover:to-[#0078AB] text-white px-6 py-2 rounded-md transition-all transform hover:scale-105">
+              Free Consultation
             </Button>
           </div>
 
@@ -83,21 +81,21 @@ const Navbar = () => {
             className="block text-rcm-gray-600 hover:text-rcm-blue-500 font-medium py-2"
             onClick={() => setMobileMenuOpen(false)}
           >
-            Solutions
+            Services
           </a>
           <a 
             href="#about" 
             className="block text-rcm-gray-600 hover:text-rcm-blue-500 font-medium py-2"
             onClick={() => setMobileMenuOpen(false)}
           >
-            About
+            About Us
           </a>
           <a 
             href="#testimonials" 
             className="block text-rcm-gray-600 hover:text-rcm-blue-500 font-medium py-2"
             onClick={() => setMobileMenuOpen(false)}
           >
-            Results
+            Success Stories
           </a>
           <a 
             href="#contact" 
@@ -106,8 +104,8 @@ const Navbar = () => {
           >
             Contact
           </a>
-          <Button className="w-full bg-gradient-to-r from-rcm-blue-500 to-rcm-teal-500 hover:from-rcm-blue-600 hover:to-rcm-teal-600 text-white py-2 rounded-md">
-            Request Demo
+          <Button className="w-full bg-gradient-to-r from-[#006B5E] to-[#0096D6] hover:from-[#005A4E] hover:to-[#0078AB] text-white py-2 rounded-md">
+            Free Consultation
           </Button>
         </div>
       </div>

@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="lg:col-span-4">
             <div className="mb-4">
               <span className="text-2xl font-display font-bold">
-                Revenue<span className="text-rcm-teal-400">Flow</span>
+                Med<span className="text-rcm-teal-400">RCM</span>360
               </span>
             </div>
             <p className="text-rcm-gray-400 mb-6 max-w-md">
@@ -18,21 +18,21 @@ const Footer = () => {
             </p>
             
             <div className="space-y-3">
-              <div className="flex items-center">
-                <Mail className="h-5 w-5 text-rcm-teal-400 mr-3" />
-                <a href="mailto:info@revenueflow.com" className="text-rcm-gray-300 hover:text-white transition-colors">
-                  info@revenueflow.com
+              <div className="flex items-center group">
+                <Mail className="h-5 w-5 text-rcm-teal-400 mr-3 group-hover:text-white transition-colors duration-300" />
+                <a href="mailto:info@medrcm360.com" className="text-rcm-gray-300 group-hover:text-white transition-colors duration-300">
+                  info@medrcm360.com
                 </a>
               </div>
-              <div className="flex items-center">
-                <Phone className="h-5 w-5 text-rcm-teal-400 mr-3" />
-                <a href="tel:+18005551234" className="text-rcm-gray-300 hover:text-white transition-colors">
+              <div className="flex items-center group">
+                <Phone className="h-5 w-5 text-rcm-teal-400 mr-3 group-hover:text-white transition-colors duration-300" />
+                <a href="tel:+18005551234" className="text-rcm-gray-300 group-hover:text-white transition-colors duration-300">
                   (800) 555-1234
                 </a>
               </div>
-              <div className="flex items-start">
-                <MapPin className="h-5 w-5 text-rcm-teal-400 mr-3 mt-0.5" />
-                <address className="not-italic text-rcm-gray-300">
+              <div className="flex items-start group">
+                <MapPin className="h-5 w-5 text-rcm-teal-400 mr-3 mt-0.5 group-hover:text-white transition-colors duration-300" />
+                <address className="not-italic text-rcm-gray-300 group-hover:text-white transition-colors duration-300">
                   123 Innovation Way<br />
                   San Francisco, CA 94103
                 </address>
@@ -45,32 +45,32 @@ const Footer = () => {
             <h3 className="font-semibold text-lg mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#about" className="text-rcm-gray-400 hover:text-white flex items-center">
-                  <ChevronRight className="h-4 w-4 mr-1" />
+                <a href="#about" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
+                  <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#" className="text-rcm-gray-400 hover:text-white flex items-center">
-                  <ChevronRight className="h-4 w-4 mr-1" />
+                <a href="#leadership" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
+                  <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
                   Leadership
                 </a>
               </li>
               <li>
-                <a href="#" className="text-rcm-gray-400 hover:text-white flex items-center">
-                  <ChevronRight className="h-4 w-4 mr-1" />
+                <a href="#careers" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
+                  <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
                   Careers
                 </a>
               </li>
               <li>
-                <a href="#" className="text-rcm-gray-400 hover:text-white flex items-center">
-                  <ChevronRight className="h-4 w-4 mr-1" />
+                <a href="#news" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
+                  <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
                   News
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-rcm-gray-400 hover:text-white flex items-center">
-                  <ChevronRight className="h-4 w-4 mr-1" />
+                <a href="#contact" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
+                  <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
                   Contact
                 </a>
               </li>
@@ -82,70 +82,70 @@ const Footer = () => {
             <h3 className="font-semibold text-lg mb-4">Solutions</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#services" className="text-rcm-gray-400 hover:text-white flex items-center">
-                  <ChevronRight className="h-4 w-4 mr-1" />
-                  Claims Management
+                <a href="#services" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
+                  <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
+                  Medical Billing
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-rcm-gray-400 hover:text-white flex items-center">
-                  <ChevronRight className="h-4 w-4 mr-1" />
-                  Financial Analytics
+                <a href="#services" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
+                  <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
+                  Coding & Documentation
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-rcm-gray-400 hover:text-white flex items-center">
-                  <ChevronRight className="h-4 w-4 mr-1" />
-                  Patient Engagement
+                <a href="#services" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
+                  <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
+                  Revenue Cycle Analytics
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-rcm-gray-400 hover:text-white flex items-center">
-                  <ChevronRight className="h-4 w-4 mr-1" />
-                  Operational Excellence
+                <a href="#services" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
+                  <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
+                  Practice Management
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-rcm-gray-400 hover:text-white flex items-center">
-                  <ChevronRight className="h-4 w-4 mr-1" />
+                <a href="#services" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
+                  <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
                   Compliance Solutions
                 </a>
               </li>
             </ul>
           </div>
           
-          {/* Resources */}
+          {/* Technology */}
           <div className="lg:col-span-2 md:col-span-1">
-            <h3 className="font-semibold text-lg mb-4">Resources</h3>
+            <h3 className="font-semibold text-lg mb-4">Technology</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-rcm-gray-400 hover:text-white flex items-center">
-                  <ChevronRight className="h-4 w-4 mr-1" />
-                  Blog
+                <a href="#features" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
+                  <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
+                  ClaimIQ™ Engine
                 </a>
               </li>
               <li>
-                <a href="#" className="text-rcm-gray-400 hover:text-white flex items-center">
-                  <ChevronRight className="h-4 w-4 mr-1" />
-                  Case Studies
+                <a href="#features" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
+                  <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
+                  RevInsight™ Analytics
                 </a>
               </li>
               <li>
-                <a href="#" className="text-rcm-gray-400 hover:text-white flex items-center">
-                  <ChevronRight className="h-4 w-4 mr-1" />
-                  White Papers
+                <a href="#features" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
+                  <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
+                  Security Infrastructure
                 </a>
               </li>
               <li>
-                <a href="#" className="text-rcm-gray-400 hover:text-white flex items-center">
-                  <ChevronRight className="h-4 w-4 mr-1" />
-                  Webinars
+                <a href="#features" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
+                  <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
+                  EHR Integrations
                 </a>
               </li>
               <li>
-                <a href="#" className="text-rcm-gray-400 hover:text-white flex items-center">
-                  <ChevronRight className="h-4 w-4 mr-1" />
-                  Support Center
+                <a href="#features" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
+                  <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
+                  Implementation Process
                 </a>
               </li>
             </ul>
@@ -161,9 +161,9 @@ const Footer = () => {
               <input 
                 type="email" 
                 placeholder="Your email" 
-                className="px-4 py-2 bg-rcm-gray-800 border border-rcm-gray-700 rounded-l-md focus:outline-none focus:ring-2 focus:ring-rcm-blue-500 focus:border-transparent text-white w-full"
+                className="px-4 py-2 bg-rcm-gray-800 border border-rcm-gray-700 rounded-l-md focus:outline-none focus:ring-2 focus:ring-[#0096D6] focus:border-transparent text-white w-full transition-all duration-300"
               />
-              <button className="bg-gradient-to-r from-rcm-blue-500 to-rcm-teal-500 hover:from-rcm-blue-600 hover:to-rcm-teal-600 text-white px-4 py-2 rounded-r-md">
+              <button className="bg-gradient-to-r from-[#006B5E] to-[#0096D6] hover:from-[#005A4E] hover:to-[#0078AB] text-white px-4 py-2 rounded-r-md transition-all duration-300">
                 Join
               </button>
             </div>
@@ -173,21 +173,21 @@ const Footer = () => {
               <div className="flex space-x-4">
                 <a 
                   href="#" 
-                  className="w-10 h-10 bg-rcm-gray-800 hover:bg-rcm-blue-600 rounded-full flex items-center justify-center transition-colors"
+                  className="w-10 h-10 bg-rcm-gray-800 hover:bg-gradient-to-r from-[#006B5E] to-[#0096D6] rounded-full flex items-center justify-center transition-colors duration-300"
                   aria-label="LinkedIn"
                 >
                   <Linkedin className="h-5 w-5" />
                 </a>
                 <a 
                   href="#" 
-                  className="w-10 h-10 bg-rcm-gray-800 hover:bg-rcm-blue-600 rounded-full flex items-center justify-center transition-colors"
+                  className="w-10 h-10 bg-rcm-gray-800 hover:bg-gradient-to-r from-[#006B5E] to-[#0096D6] rounded-full flex items-center justify-center transition-colors duration-300"
                   aria-label="Twitter"
                 >
                   <Twitter className="h-5 w-5" />
                 </a>
                 <a 
                   href="#" 
-                  className="w-10 h-10 bg-rcm-gray-800 hover:bg-rcm-blue-600 rounded-full flex items-center justify-center transition-colors"
+                  className="w-10 h-10 bg-rcm-gray-800 hover:bg-gradient-to-r from-[#006B5E] to-[#0096D6] rounded-full flex items-center justify-center transition-colors duration-300"
                   aria-label="Facebook"
                 >
                   <Facebook className="h-5 w-5" />
@@ -199,16 +199,16 @@ const Footer = () => {
         
         <div className="pt-8 mt-8 border-t border-rcm-gray-800 flex flex-col md:flex-row justify-between items-center">
           <div className="text-rcm-gray-500 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} RevenueFlow. All rights reserved.
+            &copy; {new Date().getFullYear()} MedRCM360. All rights reserved.
           </div>
           <div className="flex space-x-6">
-            <a href="#" className="text-rcm-gray-500 hover:text-rcm-gray-300 text-sm">
+            <a href="/privacy" className="text-rcm-gray-500 hover:text-rcm-gray-300 text-sm transition-colors duration-300">
               Privacy Policy
             </a>
-            <a href="#" className="text-rcm-gray-500 hover:text-rcm-gray-300 text-sm">
+            <a href="/terms" className="text-rcm-gray-500 hover:text-rcm-gray-300 text-sm transition-colors duration-300">
               Terms of Service
             </a>
-            <a href="#" className="text-rcm-gray-500 hover:text-rcm-gray-300 text-sm">
+            <a href="/cookies" className="text-rcm-gray-500 hover:text-rcm-gray-300 text-sm transition-colors duration-300">
               Cookie Policy
             </a>
           </div>

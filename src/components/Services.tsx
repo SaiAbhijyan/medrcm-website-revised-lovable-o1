@@ -18,14 +18,14 @@ const ServiceCard = ({ icon, title, description, features, isActive, onClick }: 
       className={`rounded-xl p-6 transition-all duration-300 cursor-pointer border ${
         isActive 
           ? 'bg-white shadow-medium scale-105 border-[#0096D6]/30' 
-          : 'bg-white/60 hover:bg-white hover:shadow-soft border-transparent'
+          : 'bg-white/60 hover:bg-white hover:shadow-soft border-transparent hover:border-[#0096D6]/20 hover:scale-102'
       }`}
       onClick={onClick}
     >
-      <div className={`w-12 h-12 mb-4 flex items-center justify-center rounded-full ${
+      <div className={`w-12 h-12 mb-4 flex items-center justify-center rounded-full transition-colors duration-300 ${
         isActive ? 'bg-gradient-to-r from-[#006B5E] to-[#0096D6]' : 'bg-[#E6F7FF]'
       }`}>
-        <div className={isActive ? 'text-white' : 'text-[#0096D6]'}>
+        <div className={`transition-colors duration-300 ${isActive ? 'text-white' : 'text-[#0096D6]'}`}>
           {icon}
         </div>
       </div>
@@ -42,10 +42,10 @@ const ServiceCard = ({ icon, title, description, features, isActive, onClick }: 
       
       <Button 
         variant={isActive ? "default" : "outline"} 
-        className={`w-full justify-center mt-2 ${
+        className={`w-full justify-center mt-2 transition-all duration-300 ${
           isActive 
-            ? 'bg-gradient-to-r from-[#006B5E] to-[#0096D6] hover:from-[#005A4E] hover:to-[#0078AB] text-white' 
-            : 'border-[#0096D6]/30 text-[#0096D6]'
+            ? 'bg-gradient-to-r from-[#006B5E] to-[#0096D6] hover:from-[#005A4E] hover:to-[#0078AB] text-white transform hover:scale-105' 
+            : 'border-[#0096D6]/30 text-[#0096D6] hover:bg-[#E6F7FF] hover:border-[#0096D6]'
         }`}
       >
         Learn More
@@ -156,7 +156,7 @@ const Services = () => {
         </div>
         
         <div className="mt-16 text-center">
-          <Button className="bg-white border border-[#0096D6]/30 text-[#0096D6] hover:bg-[#E6F7FF] px-8 py-6 rounded-md shadow-sm">
+          <Button className="bg-white border border-[#0096D6]/30 text-[#0096D6] hover:bg-[#E6F7FF] hover:border-[#0096D6] px-8 py-6 rounded-md shadow-sm transition-all duration-300 transform hover:scale-105 hover:shadow-md">
             View All Services
           </Button>
         </div>

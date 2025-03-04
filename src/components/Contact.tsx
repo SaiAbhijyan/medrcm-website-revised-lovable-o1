@@ -73,7 +73,7 @@ const Contact = () => {
                     <Mail className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <p className="text-white/70 text-sm">Email Us</p>
+                    <p className="text-white/70 text-sm">Reach Us At</p>
                     <a href="mailto:info@medrcm360.com" className="text-white hover:underline">support@medrcm360.com</a>
                   </div>
                 </div>

@@ -85,7 +85,7 @@ const Contact = () => {
                   <div>
                     <p className="text-white/70 text-sm">Call Us</p>
                     <a href="tel:+18005551234" className="text-white hover:underline">
-                      (800) 555-1234
+                      (732) 335-6510
                     </a>
                   </div>
                 </div>
@@ -97,8 +97,8 @@ const Contact = () => {
                   <div>
                     <p className="text-white/70 text-sm">Our Headquarters</p>
                     <address className="not-italic text-white">
-                      5000 Quorum Drive, Suite 700<br />
-                      Dallas, TX 75254
+                      3 Independence Way, Suite 108<br />
+                      Princeton, NJ 08540
                     </address>
                   </div>
                 </div>

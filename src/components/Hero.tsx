@@ -83,46 +83,32 @@ const Hero = () => {
                 className={`w-full h-auto object-cover transition-all duration-700 ${isLoaded ? 'image-loaded' : 'image-loading'}`}
               />
             </div>
-            
-            {/* Stats section */}
-            <div className="relative max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 bg-white -mb-px">
-              <div className="max-w-4xl mx-auto">
-                <dl className="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-3">
-                  <div className="flex flex-col border-b border-gray-100 p-6 text-center sm:border-0 sm:border-r">
-                    <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
-                      Average Revenue Increase
-                    </dt>
-                    <dd className="order-1 text-5xl font-extrabold text-blue-600">
-                      <div className="flex justify-center items-center">
-                        <TrendingUp className="h-8 w-8 mr-2" />
-                        <span>27%</span>
-                      </div>
-                    </dd>
-                  </div>
-                  <div className="flex flex-col border-t border-b border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r">
-                    <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
-                      Denial Reduction
-                    </dt>
-                    <dd className="order-1 text-5xl font-extrabold text-blue-600">
-                      <div className="flex justify-center items-center">
-                        <Shield className="h-8 w-8 mr-2" />
-                        <span>42%</span>
-                      </div>
-                    </dd>
-                  </div>
-                  <div className="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
-                    <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
-                      Days in A/R Reduction
-                    </dt>
-                    <dd className="order-1 text-5xl font-extrabold text-blue-600">
-                      <div className="flex justify-center items-center">
-                        <Clock className="h-8 w-8 mr-2" />
-                        <span>35%</span>
-                      </div>
-                    </dd>
-                  </div>
-                </dl>
+          </div>
+        </div>
+        
+        {/* Updated Stats section - matching the provided image */}
+        <div className="mt-16 relative z-20">
+          <div className="flex flex-wrap justify-center shadow-lg rounded-xl overflow-hidden bg-white">
+            <div className="flex-1 min-w-[250px] p-8 border-b md:border-b-0 md:border-r border-gray-100 text-center">
+              <div className="flex justify-center mb-2">
+                <TrendingUp className="h-12 w-12 text-[#1e6ae1]" />
               </div>
+              <div className="text-[#1e6ae1] text-6xl font-bold mb-2">27%</div>
+              <div className="text-gray-500 text-lg">Average Revenue Increase</div>
+            </div>
+            <div className="flex-1 min-w-[250px] p-8 border-b md:border-b-0 md:border-r border-gray-100 text-center">
+              <div className="flex justify-center mb-2">
+                <Shield className="h-12 w-12 text-[#1e6ae1]" />
+              </div>
+              <div className="text-[#1e6ae1] text-6xl font-bold mb-2">42%</div>
+              <div className="text-gray-500 text-lg">Denial Reduction</div>
+            </div>
+            <div className="flex-1 min-w-[250px] p-8 text-center">
+              <div className="flex justify-center mb-2">
+                <Clock className="h-12 w-12 text-[#1e6ae1]" />
+              </div>
+              <div className="text-[#1e6ae1] text-6xl font-bold mb-2">35%</div>
+              <div className="text-gray-500 text-lg">Days in A/R Reduction</div>
             </div>
           </div>
         </div>

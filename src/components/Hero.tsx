@@ -28,7 +28,7 @@ const Hero = () => {
             </div>
             <h1 className="mb-6">
               <span className="block">Transforming Healthcare</span> 
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#006B5E] to-[#0096D6]"> Revenue Cycle Management </span>
+              <span className="bg-clip-text text-transparent bg-gradient-to-l from-[#006B5E] to-[#0096D6]"> Revenue Cycle Management </span>
             </h1>
             <p className="text-rcm-gray-600 text-lg md:text-xl mb-8 max-w-xl">
               Streamline your healthcare revenue cycle with our cutting-edge technology and expert services. Maximize reimbursements, reduce denials, and improve patient financial experiences.

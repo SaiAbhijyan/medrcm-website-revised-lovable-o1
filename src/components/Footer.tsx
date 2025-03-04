@@ -37,8 +37,8 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center group">
                 <Mail className="h-5 w-5 text-rcm-teal-400 mr-3 group-hover:text-white transition-colors duration-300" />
-                <a href="mailto:info@medrcm360.com" className="text-rcm-gray-300 group-hover:text-white transition-colors duration-300">
-                  info@medrcm360.com
+                <a href="mailto:support@medrcm360.com" className="text-rcm-gray-300 group-hover:text-white transition-colors duration-300">
+                  support@medrcm360.com
                 </a>
               </div>
               <div className="flex items-center group">
@@ -50,8 +50,8 @@ const Footer = () => {
               <div className="flex items-start group">
                 <MapPin className="h-5 w-5 text-rcm-teal-400 mr-3 mt-0.5 group-hover:text-white transition-colors duration-300" />
                 <address className="not-italic text-rcm-gray-300 group-hover:text-white transition-colors duration-300">
-                  123 Innovation Way<br />
-                  San Francisco, CA 94103
+                  3 Independence Way<br />
+                  Princeton, NJ 08540
                 </address>
               </div>
             </div>

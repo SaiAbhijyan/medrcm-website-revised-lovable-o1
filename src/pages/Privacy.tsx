@@ -63,9 +63,9 @@ const Privacy = () => {
                 If you have any questions about this privacy policy or our privacy practices, please contact us at:
               </p>
               <div className="mt-3">
-                <p><strong>Email:</strong> privacy@medrcm360.com</p>
+                <p><strong>Email:</strong> support@medrcm360.com</p>
                 <p><strong>Phone:</strong> (800) 555-1234</p>
-                <p><strong>Address:</strong> 123 Innovation Way, San Francisco, CA 94103</p>
+                <p><strong>Address:</strong> 3 Independence Way, Princeton, NJ 08540</p>
               </div>
             </section>
           </div>

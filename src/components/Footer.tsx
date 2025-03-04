@@ -25,7 +25,7 @@ const Footer = () => {
           <div className="lg:col-span-4">
             <div className="mb-4">
               <Link to="/" className="text-2xl font-display font-bold hover:text-rcm-teal-400 transition-colors duration-300">
-                Med<span className="text-rcm-teal-400">RCM</span>360
+                MedRCM
               </Link>
             </div>
             <p className="text-rcm-gray-400 mb-6 max-w-md">

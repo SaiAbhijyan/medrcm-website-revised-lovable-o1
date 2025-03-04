@@ -82,7 +82,7 @@ const Hero = () => {
             </div>
             <div className="flex-1 min-w-[250px] p-8 text-center">
               <div className="flex justify-center mb-2">
-                <Clock className="h-12 w-12 text-[#1e6ae1]" />
+                <Clock className="h-12 w-12 text-[#0096D6]" />
               </div>
               <div className="text-[#0096D6] text-5xl font-bold mb-2">35Days</div>
               <div className="text-[#006B5E]-500 text-lg">Days in A/R Reduction</div>

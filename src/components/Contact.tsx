@@ -1,9 +1,7 @@
-
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin, Calendar, ArrowRight } from "lucide-react";
 import { toast } from "sonner";
-
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -12,18 +10,21 @@ const Contact = () => {
     message: '',
     specialty: ''
   });
-
   const [isSubmitting, setIsSubmitting] = useState(false);
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    const {
+      name,
+      value
+    } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
   };
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulating form submission
     setTimeout(() => {
       setIsSubmitting(false);
@@ -37,9 +38,7 @@ const Contact = () => {
       });
     }, 1500);
   };
-
-  return (
-    <section id="contact" className="py-20 bg-white relative overflow-hidden">
+  return <section id="contact" className="py-20 bg-white relative overflow-hidden">
       {/* Background design elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-0 w-1/3 h-1/3 bg-[#E6F7FF] rounded-br-[100px] opacity-70"></div>
@@ -75,9 +74,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-white/70 text-sm">Email Us</p>
-                    <a href="mailto:info@medrcm360.com" className="text-white hover:underline">
-                      info@medrcm360.com
-                    </a>
+                    <a href="mailto:info@medrcm360.com" className="text-white hover:underline">support@medrcm360.com</a>
                   </div>
                 </div>
                 
@@ -111,10 +108,7 @@ const Contact = () => {
                 <h4 className="font-medium text-lg mb-4">Schedule a Free Consultation</h4>
                 <div className="flex items-center">
                   <Calendar className="h-5 w-5 mr-2 text-white/80" />
-                  <a 
-                    href="#"
-                    className="text-white flex items-center hover:underline"
-                  >
+                  <a href="#" className="text-white flex items-center hover:underline">
                     Book a 30-minute assessment 
                     <ArrowRight className="h-4 w-4 ml-1" />
                   </a>
@@ -134,32 +128,14 @@ const Contact = () => {
                     <label htmlFor="name" className="block text-sm font-medium text-rcm-gray-700 mb-2">
                       Full Name
                     </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-md border border-rcm-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0096D6] focus:border-transparent"
-                      placeholder="Dr. John Smith"
-                      required
-                    />
+                    <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} className="w-full px-4 py-3 rounded-md border border-rcm-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0096D6] focus:border-transparent" placeholder="Dr. John Smith" required />
                   </div>
                   
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-rcm-gray-700 mb-2">
                       Email Address
                     </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-md border border-rcm-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0096D6] focus:border-transparent"
-                      placeholder="john@example.com"
-                      required
-                    />
+                    <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} className="w-full px-4 py-3 rounded-md border border-rcm-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0096D6] focus:border-transparent" placeholder="john@example.com" required />
                   </div>
                 </div>
                 
@@ -168,28 +144,14 @@ const Contact = () => {
                     <label htmlFor="practice" className="block text-sm font-medium text-rcm-gray-700 mb-2">
                       Practice/Organization
                     </label>
-                    <input
-                      type="text"
-                      id="practice"
-                      name="practice"
-                      value={formData.practice}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-md border border-rcm-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0096D6] focus:border-transparent"
-                      placeholder="Your Medical Practice"
-                    />
+                    <input type="text" id="practice" name="practice" value={formData.practice} onChange={handleChange} className="w-full px-4 py-3 rounded-md border border-rcm-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0096D6] focus:border-transparent" placeholder="Your Medical Practice" />
                   </div>
                   
                   <div>
                     <label htmlFor="specialty" className="block text-sm font-medium text-rcm-gray-700 mb-2">
                       Medical Specialty
                     </label>
-                    <select
-                      id="specialty"
-                      name="specialty"
-                      value={formData.specialty}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-md border border-rcm-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0096D6] focus:border-transparent"
-                    >
+                    <select id="specialty" name="specialty" value={formData.specialty} onChange={handleChange} className="w-full px-4 py-3 rounded-md border border-rcm-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0096D6] focus:border-transparent">
                       <option value="" disabled>Select specialty</option>
                       <option value="cardiology">Cardiology</option>
                       <option value="dermatology">Dermatology</option>
@@ -212,35 +174,17 @@ const Contact = () => {
                   <label htmlFor="message" className="block text-sm font-medium text-rcm-gray-700 mb-2">
                     How Can We Help You?
                   </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    rows={5}
-                    className="w-full px-4 py-3 rounded-md border border-rcm-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0096D6] focus:border-transparent"
-                    placeholder="Tell us about your current revenue cycle challenges and what you're looking to improve..."
-                    required
-                  ></textarea>
+                  <textarea id="message" name="message" value={formData.message} onChange={handleChange} rows={5} className="w-full px-4 py-3 rounded-md border border-rcm-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0096D6] focus:border-transparent" placeholder="Tell us about your current revenue cycle challenges and what you're looking to improve..." required></textarea>
                 </div>
                 
                 <div className="flex items-center mb-6">
-                  <input
-                    type="checkbox"
-                    id="consent"
-                    className="h-4 w-4 text-[#0096D6] border-rcm-gray-300 rounded focus:ring-[#0096D6]"
-                    required
-                  />
+                  <input type="checkbox" id="consent" className="h-4 w-4 text-[#0096D6] border-rcm-gray-300 rounded focus:ring-[#0096D6]" required />
                   <label htmlFor="consent" className="ml-2 block text-sm text-rcm-gray-600">
                     I agree to receive communications from MedRCM360. You can unsubscribe at any time.
                   </label>
                 </div>
                 
-                <Button 
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-[#006B5E] to-[#0096D6] hover:from-[#005A4E] hover:to-[#0078AB] text-white py-3 rounded-md transition-all"
-                >
+                <Button type="submit" disabled={isSubmitting} className="w-full bg-gradient-to-r from-[#006B5E] to-[#0096D6] hover:from-[#005A4E] hover:to-[#0078AB] text-white py-3 rounded-md transition-all">
                   {isSubmitting ? 'Sending...' : 'Request Free Consultation'}
                 </Button>
               </form>
@@ -248,8 +192,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;

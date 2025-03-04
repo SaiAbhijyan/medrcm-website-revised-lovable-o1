@@ -1,23 +1,17 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 import { TrendingUp, Shield, Clock } from 'lucide-react';
-
 const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);
-
   useEffect(() => {
     // Simulate loading effect
     const timer = setTimeout(() => {
       setIsLoaded(true);
     }, 100);
-    
     return () => clearTimeout(timer);
   }, []);
-
-  return (
-    <section className="relative overflow-hidden pt-20 pb-16 md:pt-32 md:pb-24">
+  return <section className="relative overflow-hidden pt-20 pb-16 md:pt-32 md:pb-24">
       {/* Background elements */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-[#E6F7FF] rounded-bl-[100px] opacity-70"></div>
@@ -30,9 +24,7 @@ const Hero = () => {
           {/* Hero text */}
           <div className={`transition-all duration-700 delay-100 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="inline-block mb-4">
-              <span className="bg-[#E6F7FF] text-[#0096D6] text-sm font-medium px-3 py-1 rounded-full">
-                Complete Healthcare Revenue Cycle Management
-              </span>
+              <span className="bg-[#E6F7FF] text-[#0096D6] text-sm font-medium px-3 py-1 rounded-full">Complete Healthcare Revenue Cycle Management</span>
             </div>
             <h1 className="mb-6">
               <span className="block">Transforming Healthcare</span> 
@@ -43,24 +35,21 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
-              <Button 
-                onClick={() => {
-                  const element = document.getElementById('contact');
-                  if (element) element.scrollIntoView({ behavior: 'smooth' });
-                }} 
-                className="bg-gradient-to-r from-[#006B5E] to-[#0096D6] hover:from-[#005A4E] hover:to-[#0078AB] text-white px-6 py-6 rounded-md transition-all transform hover:scale-105 shadow-md"
-              >
+              <Button onClick={() => {
+              const element = document.getElementById('contact');
+              if (element) element.scrollIntoView({
+                behavior: 'smooth'
+              });
+            }} className="bg-gradient-to-r from-[#006B5E] to-[#0096D6] hover:from-[#005A4E] hover:to-[#0078AB] text-white px-6 py-6 rounded-md transition-all transform hover:scale-105 shadow-md">
                 Schedule Free Consultation
                 <ChevronRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button 
-                variant="outline" 
-                onClick={() => {
-                  const element = document.getElementById('about');
-                  if (element) element.scrollIntoView({ behavior: 'smooth' });
-                }}
-                className="border-[#0096D6] text-[#0096D6] hover:bg-[#E6F7FF] px-6 py-6 rounded-md"
-              >
+              <Button variant="outline" onClick={() => {
+              const element = document.getElementById('about');
+              if (element) element.scrollIntoView({
+                behavior: 'smooth'
+              });
+            }} className="border-[#0096D6] text-[#0096D6] hover:bg-[#E6F7FF] px-6 py-6 rounded-md">
                 Learn More About Us
               </Button>
             </div>
@@ -69,11 +58,7 @@ const Hero = () => {
           {/* Hero image */}
           <div className={`relative transition-all duration-700 delay-300 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="glass-card rounded-2xl overflow-hidden shadow-medium">
-              <img 
-                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef"
-                alt="Healthcare professionals working with MedRCM360 technology" 
-                className={`w-full h-auto object-cover transition-all duration-700 ${isLoaded ? 'image-loaded' : 'image-loading'}`}
-              />
+              <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef" alt="Healthcare professionals working with MedRCM360 technology" className={`w-full h-auto object-cover transition-all duration-700 ${isLoaded ? 'image-loaded' : 'image-loading'}`} />
             </div>
           </div>
         </div>
@@ -85,28 +70,26 @@ const Hero = () => {
               <div className="flex justify-center mb-2">
                 <TrendingUp className="h-12 w-12 text-[#1e6ae1]" />
               </div>
-              <div className="text-[#1e6ae1] text-6xl font-bold mb-2">27%</div>
-              <div className="text-gray-500 text-lg">Average Revenue Increase</div>
+              <div className="text-[#0096D6] text-5xl font-bold mb-2">27%</div>
+              <div className="text-[#006B5E]-500 text-lg">Average Revenue Increase</div>
             </div>
             <div className="flex-1 min-w-[250px] p-8 border-b md:border-b-0 md:border-r border-gray-100 text-center">
               <div className="flex justify-center mb-2">
                 <Shield className="h-12 w-12 text-[#1e6ae1]" />
               </div>
-              <div className="text-[#1e6ae1] text-6xl font-bold mb-2">98%</div>
-              <div className="text-gray-500 text-lg">Clean Claim Rate</div>
+              <div className="text-[#0096D6] text-5xl font-bold mb-2">98%</div>
+              <div className="text-[#006B5E]-500 text-lg">Clean Claim Rate</div>
             </div>
             <div className="flex-1 min-w-[250px] p-8 text-center">
               <div className="flex justify-center mb-2">
                 <Clock className="h-12 w-12 text-[#1e6ae1]" />
               </div>
-              <div className="text-[#1e6ae1] text-6xl font-bold mb-2">35days</div>
-              <div className="text-gray-500 text-lg">Days in A/R Reduction</div>
+              <div className="text-[#0096D6] text-5xl font-bold mb-2">35Days</div>
+              <div className="text-[#006B5E]-500 text-lg">Days in A/R Reduction</div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;

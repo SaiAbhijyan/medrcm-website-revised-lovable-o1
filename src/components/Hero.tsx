@@ -75,7 +75,7 @@ const Hero = () => {
             </div>
             <div className="flex-1 min-w-[250px] p-8 border-b md:border-b-0 md:border-r border-gray-100 text-center">
               <div className="flex justify-center mb-2">
-                <Shield className="h-12 w-12 text-[#1e6ae1]" />
+                <Shield className="h-12 w-12 text-[#0096D6]" />
               </div>
               <div className="text-[#0096D6] text-5xl font-bold mb-2">98%</div>
               <div className="text-[#006B5E]-500 text-lg">Clean Claim Rate</div>

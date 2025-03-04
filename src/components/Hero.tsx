@@ -68,7 +68,7 @@ const Hero = () => {
           <div className="flex flex-wrap justify-center shadow-lg rounded-xl overflow-hidden bg-white">
             <div className="flex-1 min-w-[250px] p-8 border-b md:border-b-0 md:border-r border-gray-100 text-center">
               <div className="flex justify-center mb-2">
-                <TrendingUp className="h-12 w-12 text-[#1e6ae1]" />
+                <TrendingUp className="h-12 w-12 text-[#0096D6]" />
               </div>
               <div className="text-[#0096D6] text-5xl font-bold mb-2">27%</div>
               <div className="text-[#006B5E]-500 text-lg">Average Revenue Increase</div>

@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
-import { ChevronRight, BarChart2, ShieldCheck, DollarSign } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import { TrendingUp, Shield, Clock } from 'lucide-react';
 
 const Hero = () => {
@@ -43,16 +43,28 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
-              <Button className="bg-gradient-to-r from-[#006B5E] to-[#0096D6] hover:from-[#005A4E] hover:to-[#0078AB] text-white px-6 py-6 rounded-md transition-all transform hover:scale-105 shadow-md">
+              <Button 
+                onClick={() => {
+                  const element = document.getElementById('contact');
+                  if (element) element.scrollIntoView({ behavior: 'smooth' });
+                }} 
+                className="bg-gradient-to-r from-[#006B5E] to-[#0096D6] hover:from-[#005A4E] hover:to-[#0078AB] text-white px-6 py-6 rounded-md transition-all transform hover:scale-105 shadow-md"
+              >
                 Schedule Free Consultation
                 <ChevronRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" className="border-[#0096D6] text-[#0096D6] hover:bg-[#E6F7FF] px-6 py-6 rounded-md">
+              <Button 
+                variant="outline" 
+                onClick={() => {
+                  const element = document.getElementById('about');
+                  if (element) element.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="border-[#0096D6] text-[#0096D6] hover:bg-[#E6F7FF] px-6 py-6 rounded-md"
+              >
                 Learn More About Us
               </Button>
             </div>
-            
-            
+          </div>
           
           {/* Hero image */}
           <div className={`relative transition-all duration-700 delay-300 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
@@ -66,7 +78,7 @@ const Hero = () => {
           </div>
         </div>
         
-        {/* Updated Stats section - matching the provided image */}
+        {/* Stats section */}
         <div className="mt-16 relative z-20">
           <div className="flex flex-wrap justify-center shadow-lg rounded-xl overflow-hidden bg-white">
             <div className="flex-1 min-w-[250px] p-8 border-b md:border-b-0 md:border-r border-gray-100 text-center">

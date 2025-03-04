@@ -1,5 +1,6 @@
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import Services from '@/components/Services';
@@ -13,6 +14,25 @@ import { ChevronUp } from 'lucide-react';
 const Index = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [activeSection, setActiveSection] = useState('');
+  const location = useLocation();
+  const initialScrollDone = useRef(false);
+
+  // Handle initial hash navigation
+  useEffect(() => {
+    // Check if URL has a hash and scroll to that section
+    if (location.hash && !initialScrollDone.current) {
+      const sectionId = location.hash.slice(1); // Remove the # character
+      const element = document.getElementById(sectionId);
+      
+      if (element) {
+        // Add a slight delay to ensure DOM is fully rendered
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+          initialScrollDone.current = true;
+        }, 100);
+      }
+    }
+  }, [location]);
 
   useEffect(() => {
     const handleScroll = () => {

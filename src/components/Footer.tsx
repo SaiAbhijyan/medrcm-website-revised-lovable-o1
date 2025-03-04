@@ -1,8 +1,24 @@
 
 import { Mail, Phone, MapPin, ChevronRight, Linkedin, Twitter, Facebook } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
+  const location = useLocation();
+  
+  // Helper function to handle section navigation
+  const scrollToSection = (sectionId: string) => {
+    // Check if we're already on the home page
+    if (location.pathname === '/') {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // Navigate to home page with section hash
+      window.location.href = `/#${sectionId}`;
+    }
+  };
+
   return (
     <footer className="bg-rcm-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-16 pb-8">
@@ -10,9 +26,9 @@ const Footer = () => {
           {/* Logo and intro */}
           <div className="lg:col-span-4">
             <div className="mb-4">
-              <span className="text-2xl font-display font-bold">
+              <Link to="/" className="text-2xl font-display font-bold hover:text-rcm-teal-400 transition-colors duration-300">
                 Med<span className="text-rcm-teal-400">RCM</span>360
-              </span>
+              </Link>
             </div>
             <p className="text-rcm-gray-400 mb-6 max-w-md">
               Innovative technology and service solutions for healthcare revenue cycle management that drive financial performance and enhance patient experience.
@@ -48,7 +64,7 @@ const Footer = () => {
               <li>
                 <Link to="/about" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
                   <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
-                  About Us
+                  About MedRCM
                 </Link>
               </li>
               <li>
@@ -70,10 +86,13 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/#contact" className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1">
+                <button
+                  onClick={() => scrollToSection('contact')}
+                  className="text-rcm-gray-400 hover:text-white flex items-center group transition-all duration-300 hover:translate-x-1 w-full text-left"
+                >
                   <ChevronRight className="h-4 w-4 mr-1 text-rcm-teal-400 group-hover:text-white transition-colors duration-300" />
                   Contact
-                </Link>
+                </button>
               </li>
             </ul>
           </div>
@@ -115,7 +134,7 @@ const Footer = () => {
             </ul>
           </div>
           
-          {/* Technology */}
+          {/* Resources */}
           <div className="lg:col-span-2 md:col-span-1">
             <h3 className="font-semibold text-lg mb-4">Resources</h3>
             <ul className="space-y-2">

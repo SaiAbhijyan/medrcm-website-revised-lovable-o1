@@ -17,7 +17,7 @@ const Testimonials = () => {
   
   const testimonials: Testimonial[] = [
     {
-      quote: "MedRCM360 transformed our practice's financial performance. Their expertise in cardiology billing helped us reduce denials by 42% and increase our collections by over $400,000 in the first year alone.",
+      quote: "MedRCM transformed our practice's financial performance. Their expertise in cardiology billing helped us reduce denials by 42% and increase our collections by over $400,000 in the first year alone.",
       author: "Dr. James Wilson",
       position: "Cardiologist",
       organization: "Heart & Vascular Institute",
@@ -25,7 +25,7 @@ const Testimonials = () => {
       logo: "https://placehold.co/200x80/e0f2fe/0ea5e9?text=HVI&font=montserrat"
     },
     {
-      quote: "Switching to MedRCM360 was the best decision we made. Their team understands the complexities of orthopedic coding and has helped us navigate bundled payments and value-based care models successfully.",
+      quote: "Switching to MedRCM was the best decision we made. Their team understands the complexities of orthopedic coding and has helped us navigate bundled payments and value-based care models successfully.",
       author: "Dr. Sarah Chen",
       position: "Orthopedic Surgeon",
       organization: "Advanced Orthopedic Associates",
@@ -33,7 +33,7 @@ const Testimonials = () => {
       logo: "https://placehold.co/200x80/dcfce7/16a34a?text=AOA&font=montserrat"
     },
     {
-      quote: "As a multi-specialty practice, we needed an RCM partner who could handle diverse billing requirements. MedRCM360 delivered with their specialty-specific teams and comprehensive reporting that gives us complete visibility.",
+      quote: "As a multi-specialty practice, we needed an RCM partner who could handle diverse billing requirements. MedRCM delivered with their specialty-specific teams and comprehensive reporting that gives us complete visibility.",
       author: "Michael Roberts",
       position: "Practice Administrator",
       organization: "Cornerstone Medical Group",

@@ -35,8 +35,8 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center group">
                 <Mail className="h-5 w-5 text-rcm-teal-400 mr-3 group-hover:text-white transition-colors duration-300" />
-                <a href="mailto:support@MedRCM.com" className="text-rcm-gray-300 group-hover:text-white transition-colors duration-300">
-                  support@MedRCM.com
+                <a href="mailto:support@medrcm360.com" className="text-rcm-gray-300 group-hover:text-white transition-colors duration-300">
+                  support@medrcm360.com
                 </a>
               </div>
               <div className="flex items-center group">

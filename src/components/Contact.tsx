@@ -28,7 +28,7 @@ const Contact = () => {
     // Simulating form submission
     setTimeout(() => {
       setIsSubmitting(false);
-      toast.success("Thank you for contacting MedRCM360! One of our specialists will be in touch shortly.");
+      toast.success("Thank you for contacting MedRCM! One of our specialists will be in touch shortly.");
       setFormData({
         name: '',
         email: '',
@@ -54,7 +54,7 @@ const Contact = () => {
           </div>
           <h2 className="mb-6">Ready to Transform Your Revenue Cycle?</h2>
           <p className="text-rcm-gray-600 text-lg">
-            Contact MedRCM360 today to discover how our specialized medical billing and revenue cycle management services can help your practice thrive.
+            Contact MedRCM today to discover how our specialized medical billing and revenue cycle management services can help your practice thrive.
           </p>
         </div>
         
@@ -74,7 +74,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-white/70 text-sm">Email Us</p>
-                    <a href="mailto:info@medrcm360.com" className="text-white hover:underline">support@medrcm360.com</a>
+                    <a href="mailto:info@MedRCM.com" className="text-white hover:underline">support@MedRCM.com</a>
                   </div>
                 </div>
                 
@@ -180,7 +180,7 @@ const Contact = () => {
                 <div className="flex items-center mb-6">
                   <input type="checkbox" id="consent" className="h-4 w-4 text-[#0096D6] border-rcm-gray-300 rounded focus:ring-[#0096D6]" required />
                   <label htmlFor="consent" className="ml-2 block text-sm text-rcm-gray-600">
-                    I agree to receive communications from MedRCM360. You can unsubscribe at any time.
+                    I agree to receive communications from MedRCM. You can unsubscribe at any time.
                   </label>
                 </div>
                 

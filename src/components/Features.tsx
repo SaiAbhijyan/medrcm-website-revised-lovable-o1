@@ -16,7 +16,7 @@ const Features = () => {
             Innovative RCM Technology Platform
           </h2>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            Our proprietary MedRCM360 platform combines AI-powered automation with expert human oversight to deliver exceptional results for healthcare providers.
+            Our proprietary MedRCM platform combines AI-powered automation with expert human oversight to deliver exceptional results for healthcare providers.
           </p>
         </div>
 

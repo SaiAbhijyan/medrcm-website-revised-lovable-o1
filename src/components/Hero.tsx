@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { ChevronRight, BarChart2, ShieldCheck, DollarSign } from "lucide-react";
 import { TrendingUp, Shield, Clock } from 'lucide-react';
 
-
 const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -84,47 +83,51 @@ const Hero = () => {
                 className={`w-full h-auto object-cover transition-all duration-700 ${isLoaded ? 'image-loaded' : 'image-loading'}`}
               />
             </div>
+            
             {/* Stats section */}
             <div className="relative max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 bg-white -mb-px">
-        <div className="max-w-4xl mx-auto">
-          <dl className="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-3">
-            <div className="flex flex-col border-b border-gray-100 p-6 text-center sm:border-0 sm:border-r">
-              <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
-                Average Revenue Increase
-              </dt>
-              <dd className="order-1 text-5xl font-extrabold text-blue-600">
-                <div className="flex justify-center items-center">
-                  <TrendingUp className="h-8 w-8 mr-2" />
-                  <span>27%</span>
-                </div>
-              </dd>
+              <div className="max-w-4xl mx-auto">
+                <dl className="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-3">
+                  <div className="flex flex-col border-b border-gray-100 p-6 text-center sm:border-0 sm:border-r">
+                    <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
+                      Average Revenue Increase
+                    </dt>
+                    <dd className="order-1 text-5xl font-extrabold text-blue-600">
+                      <div className="flex justify-center items-center">
+                        <TrendingUp className="h-8 w-8 mr-2" />
+                        <span>27%</span>
+                      </div>
+                    </dd>
+                  </div>
+                  <div className="flex flex-col border-t border-b border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r">
+                    <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
+                      Denial Reduction
+                    </dt>
+                    <dd className="order-1 text-5xl font-extrabold text-blue-600">
+                      <div className="flex justify-center items-center">
+                        <Shield className="h-8 w-8 mr-2" />
+                        <span>42%</span>
+                      </div>
+                    </dd>
+                  </div>
+                  <div className="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
+                    <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
+                      Days in A/R Reduction
+                    </dt>
+                    <dd className="order-1 text-5xl font-extrabold text-blue-600">
+                      <div className="flex justify-center items-center">
+                        <Clock className="h-8 w-8 mr-2" />
+                        <span>35%</span>
+                      </div>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
             </div>
-            <div className="flex flex-col border-t border-b border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r">
-              <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
-                Denial Reduction
-              </dt>
-              <dd className="order-1 text-5xl font-extrabold text-blue-600">
-                <div className="flex justify-center items-center">
-                  <Shield className="h-8 w-8 mr-2" />
-                  <span>42%</span>
-                </div>
-              </dd>
-            </div>
-            <div className="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
-              <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">
-                Days in A/R Reduction
-              </dt>
-              <dd className="order-1 text-5xl font-extrabold text-blue-600">
-                <div className="flex justify-center items-center">
-                  <Clock className="h-8 w-8 mr-2" />
-                  <span>35%</span>
-                </div>
-              </dd>
-            </div>
-          </dl>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

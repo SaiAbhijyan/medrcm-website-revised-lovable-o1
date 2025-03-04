@@ -1,11 +1,8 @@
-
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Linkedin, Twitter } from 'lucide-react';
-
 const Leadership = () => {
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow pt-24">
         {/* Hero Section */}
@@ -13,9 +10,7 @@ const Leadership = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="text-center max-w-3xl mx-auto">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Leadership Team</h1>
-              <p className="text-xl opacity-90">
-                Meet the experienced professionals guiding MedRCM360's vision and strategy.
-              </p>
+              <p className="text-xl opacity-90">Meet the experienced professionals guiding MedRCM's vision and strategy.</p>
             </div>
           </div>
         </section>
@@ -39,11 +34,7 @@ const Leadership = () => {
               {/* CEO */}
               <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div className="relative">
-                  <img 
-                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1287" 
-                    alt="Sarah Johnson, CEO" 
-                    className="w-full h-64 object-cover object-center"
-                  />
+                  <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1287" alt="Sarah Johnson, CEO" className="w-full h-64 object-cover object-center" />
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                     <div className="flex justify-end space-x-2">
                       <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="bg-white/20 p-2 rounded-full backdrop-blur-sm hover:bg-white/40 transition-colors duration-300">
@@ -70,11 +61,7 @@ const Leadership = () => {
               {/* CTO */}
               <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div className="relative">
-                  <img 
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1350" 
-                    alt="David Chen, CTO" 
-                    className="w-full h-64 object-cover object-center"
-                  />
+                  <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1350" alt="David Chen, CTO" className="w-full h-64 object-cover object-center" />
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                     <div className="flex justify-end space-x-2">
                       <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="bg-white/20 p-2 rounded-full backdrop-blur-sm hover:bg-white/40 transition-colors duration-300">
@@ -101,11 +88,7 @@ const Leadership = () => {
               {/* COO */}
               <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div className="relative">
-                  <img 
-                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1288" 
-                    alt="Michelle Rodriguez, COO" 
-                    className="w-full h-64 object-cover object-center"
-                  />
+                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1288" alt="Michelle Rodriguez, COO" className="w-full h-64 object-cover object-center" />
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                     <div className="flex justify-end space-x-2">
                       <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="bg-white/20 p-2 rounded-full backdrop-blur-sm hover:bg-white/40 transition-colors duration-300">
@@ -132,11 +115,7 @@ const Leadership = () => {
               {/* CMO */}
               <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div className="relative">
-                  <img 
-                    src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1287" 
-                    alt="Robert Wilson, CMO" 
-                    className="w-full h-64 object-cover object-center"
-                  />
+                  <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1287" alt="Robert Wilson, CMO" className="w-full h-64 object-cover object-center" />
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                     <div className="flex justify-end space-x-2">
                       <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="bg-white/20 p-2 rounded-full backdrop-blur-sm hover:bg-white/40 transition-colors duration-300">
@@ -163,11 +142,7 @@ const Leadership = () => {
               {/* CFO */}
               <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div className="relative">
-                  <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1287" 
-                    alt="James Thompson, CFO" 
-                    className="w-full h-64 object-cover object-center"
-                  />
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1287" alt="James Thompson, CFO" className="w-full h-64 object-cover object-center" />
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                     <div className="flex justify-end space-x-2">
                       <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="bg-white/20 p-2 rounded-full backdrop-blur-sm hover:bg-white/40 transition-colors duration-300">
@@ -194,11 +169,7 @@ const Leadership = () => {
               {/* CISO */}
               <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div className="relative">
-                  <img 
-                    src="https://images.unsplash.com/photo-1573497019236-61938d45340c?q=80&w=1287" 
-                    alt="Lisa Patel, CISO" 
-                    className="w-full h-64 object-cover object-center"
-                  />
+                  <img src="https://images.unsplash.com/photo-1573497019236-61938d45340c?q=80&w=1287" alt="Lisa Patel, CISO" className="w-full h-64 object-cover object-center" />
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                     <div className="flex justify-end space-x-2">
                       <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="bg-white/20 p-2 rounded-full backdrop-blur-sm hover:bg-white/40 transition-colors duration-300">
@@ -243,11 +214,7 @@ const Leadership = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Advisor 1 */}
               <div className="flex flex-col sm:flex-row md:flex-col items-center md:items-start text-center md:text-left space-y-4 sm:space-y-0 md:space-y-4 sm:space-x-4 md:space-x-0">
-                <img 
-                  src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=1476" 
-                  alt="Dr. Michael Brown" 
-                  className="w-24 h-24 rounded-full object-cover object-center"
-                />
+                <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=1476" alt="Dr. Michael Brown" className="w-24 h-24 rounded-full object-cover object-center" />
                 <div>
                   <h3 className="text-lg font-bold">Dr. Michael Brown</h3>
                   <p className="text-rcm-teal-600 text-sm mb-2">Former Hospital CEO, Healthcare Policy Expert</p>
@@ -259,11 +226,7 @@ const Leadership = () => {
               
               {/* Advisor 2 */}
               <div className="flex flex-col sm:flex-row md:flex-col items-center md:items-start text-center md:text-left space-y-4 sm:space-y-0 md:space-y-4 sm:space-x-4 md:space-x-0">
-                <img 
-                  src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1361" 
-                  alt="Dr. Emily Zhang" 
-                  className="w-24 h-24 rounded-full object-cover object-center"
-                />
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1361" alt="Dr. Emily Zhang" className="w-24 h-24 rounded-full object-cover object-center" />
                 <div>
                   <h3 className="text-lg font-bold">Dr. Emily Zhang</h3>
                   <p className="text-rcm-teal-600 text-sm mb-2">AI Research Scientist, Former Health Tech CTO</p>
@@ -275,11 +238,7 @@ const Leadership = () => {
               
               {/* Advisor 3 */}
               <div className="flex flex-col sm:flex-row md:flex-col items-center md:items-start text-center md:text-left space-y-4 sm:space-y-0 md:space-y-4 sm:space-x-4 md:space-x-0">
-                <img 
-                  src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=1470" 
-                  alt="Karen Williams" 
-                  className="w-24 h-24 rounded-full object-cover object-center"
-                />
+                <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=1470" alt="Karen Williams" className="w-24 h-24 rounded-full object-cover object-center" />
                 <div>
                   <h3 className="text-lg font-bold">Karen Williams</h3>
                   <p className="text-rcm-teal-600 text-sm mb-2">Healthcare Finance Expert, Former Insurance Executive</p>
@@ -311,8 +270,6 @@ const Leadership = () => {
         </section>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Leadership;

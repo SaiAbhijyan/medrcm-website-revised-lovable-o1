@@ -2,6 +2,8 @@
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { ChevronRight, BarChart2, ShieldCheck, DollarSign } from "lucide-react";
+import { TrendingUp, Shield, Clock } from 'lucide-react';
+
 
 const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);

@@ -52,27 +52,7 @@ const Hero = () => {
               </Button>
             </div>
             
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
-              <div className="flex items-center">
-                <div className="bg-[#E6F7FF] p-2 rounded-full mr-3">
-                  <BarChart2 className="h-5 w-5 text-[#0096D6]" />
-                </div>
-                <span className="text-sm font-medium text-rcm-gray-700">98% Clean Claim Rate</span>
-              </div>
-              <div className="flex items-center">
-                <div className="bg-[#E6F4F1] p-2 rounded-full mr-3">
-                  <DollarSign className="h-5 w-5 text-[#006B5E]" />
-                </div>
-                <span className="text-sm font-medium text-rcm-gray-700">15-20% Revenue Increase</span>
-              </div>
-              <div className="flex items-center">
-                <div className="bg-[#E6F7FF] p-2 rounded-full mr-3">
-                  <ShieldCheck className="h-5 w-5 text-[#0096D6]" />
-                </div>
-                <span className="text-sm font-medium text-rcm-gray-700">HIPAA Compliant</span>
-              </div>
-            </div>
-          </div>
+            
           
           {/* Hero image */}
           <div className={`relative transition-all duration-700 delay-300 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>

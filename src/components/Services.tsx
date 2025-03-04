@@ -137,7 +137,7 @@ const Services = () => {
           </div>
           <h2 className="mb-6">Comprehensive Revenue Cycle Solutions</h2>
           <p className="text-rcm-gray-600 text-lg">
-            MedRCM360 provides end-to-end revenue cycle management services tailored to your specialty, helping you increase collections, reduce overhead, and focus on patient care.
+            MedRCM provides end-to-end revenue cycle management services tailored to your specialty, helping you increase collections, reduce overhead, and focus on patient care.
           </p>
         </div>
         

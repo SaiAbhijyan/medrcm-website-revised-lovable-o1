@@ -35,8 +35,8 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center group">
                 <Mail className="h-5 w-5 text-rcm-teal-400 mr-3 group-hover:text-white transition-colors duration-300" />
-                <a href="mailto:support@medrcm360.com" className="text-rcm-gray-300 group-hover:text-white transition-colors duration-300">
-                  support@medrcm360.com
+                <a href="mailto:support@MedRCM.com" className="text-rcm-gray-300 group-hover:text-white transition-colors duration-300">
+                  support@MedRCM.com
                 </a>
               </div>
               <div className="flex items-center group">
@@ -196,7 +196,7 @@ const Footer = () => {
         
         <div className="pt-8 mt-8 border-t border-rcm-gray-800 flex flex-col md:flex-row justify-between items-center">
           <div className="text-rcm-gray-500 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} MedRCM360. All rights reserved.
+            &copy; {new Date().getFullYear()} MedRCM. All rights reserved.
           </div>
           <div className="flex space-x-6">
             <Link to="/privacy" className="text-rcm-gray-500 hover:text-rcm-gray-300 text-sm transition-colors duration-300">

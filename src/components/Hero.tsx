@@ -73,8 +73,8 @@ const Hero = () => {
               <div className="flex justify-center mb-2">
                 <TrendingUp className="h-12 w-12 text-[#1e6ae1]" />
               </div>
-              <div className="text-[#1e6ae1] text-6xl font-bold mb-2">20-27%</div>
-              <div className="text-gray-500 text-lg">Revenue Increase</div>
+              <div className="text-[#1e6ae1] text-6xl font-bold mb-2">27%</div>
+              <div className="text-gray-500 text-lg">Average Revenue Increase</div>
             </div>
             <div className="flex-1 min-w-[250px] p-8 border-b md:border-b-0 md:border-r border-gray-100 text-center">
               <div className="flex justify-center mb-2">

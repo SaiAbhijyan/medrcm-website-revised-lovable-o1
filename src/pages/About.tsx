@@ -1,18 +1,15 @@
-
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Building, Users, Award, Globe, Heart, CheckCircle } from 'lucide-react';
-
 const About = () => {
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow pt-24">
         {/* Hero Section */}
         <section className="bg-gradient-to-r from-[#006B5E] to-[#0096D6] text-white py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="text-center max-w-3xl mx-auto">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">About MedRCM360</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">About MedRCM</h1>
               <p className="text-xl opacity-90">
                 Transforming healthcare financial operations with innovative technology and exceptional service.
               </p>
@@ -31,9 +28,7 @@ const About = () => {
                   </span>
                 </div>
                 <h2 className="text-3xl font-bold mb-6">Founded by Healthcare Professionals for Healthcare Professionals</h2>
-                <p className="text-rcm-gray-600 mb-6">
-                  MedRCM360 was founded in 2010 by a team of healthcare professionals, administrators, and technology experts who recognized the growing complexity of medical billing and revenue cycle management. 
-                </p>
+                <p className="text-rcm-gray-600 mb-6">MedRCM360 was founded in 2018 by a team of revenue cycle management experts, healthcare professionals, administrators, and technology experts who recognized the growing complexity of medical billing and revenue cycle management.</p>
                 <p className="text-rcm-gray-600 mb-6">
                   What began as a small consultancy has grown into an industry-leading revenue cycle management partner serving healthcare providers across the United States, from independent practices to large hospital systems.
                 </p>
@@ -43,11 +38,7 @@ const About = () => {
               </div>
               <div className="relative">
                 <div className="rounded-xl overflow-hidden shadow-xl">
-                  <img 
-                    src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070" 
-                    alt="MedRCM360 Team" 
-                    className="w-full h-auto"
-                  />
+                  <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070" alt="MedRCM360 Team" className="w-full h-auto" />
                 </div>
                 <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg">
                   <p className="text-lg font-semibold text-rcm-blue-500">12+ Years</p>
@@ -187,8 +178,6 @@ const About = () => {
         </section>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default About;
